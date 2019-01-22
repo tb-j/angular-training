@@ -1,12 +1,16 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<h1 (click)="changeTitle($event)">
-  Welcome to {{ title }}!
-</h1>
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">TV Maniac</a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="#">Home</a>
+        <a class="nav-item nav-link" href="#">Shows</a>
+        <a class="nav-item nav-link" href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
 
-<tm-home [owner]="title"></tm-home>
-<tm-home owner="title" (timePass)="title = $event"></tm-home>
-<tm-home owner="{{ title }}"></tm-home>
-<tm-home [owner]="'title'"></tm-home>
-<tm-home></tm-home>
-
-<router-outlet></router-outlet>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
