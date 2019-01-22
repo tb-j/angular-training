@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tv-maniac';
+
+  changeTitle(e: MouseEvent) {
+    this.title = this.title + '!';
+  }
 }
