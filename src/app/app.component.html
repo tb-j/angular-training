@@ -1,11 +1,11 @@
 <nav class="navbar navbar-expand navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="#">TV Maniac</a>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <a class="navbar-brand" routerLink="">TV Maniac</a>
+    <div class="collapse navbar-collapse">
       <div class="navbar-nav">
-        <a class="nav-item nav-link" href="#">Home</a>
-        <a class="nav-item nav-link" href="#">Shows</a>
-        <a class="nav-item nav-link" href="#">Contact</a>
+        <a class="nav-item nav-link" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        <a class="nav-item nav-link" routerLink="tv" routerLinkActive="active">Shows</a>
+        <a class="nav-item nav-link" routerLink="contact" routerLinkActive="active">Contact</a>
       </div>
     </div>
   </div>
