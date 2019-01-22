@@ -9,7 +9,7 @@
       "projectType": "application",
       "prefix": "tm",
       "schematics": {
-        "@schemat/**/ics/angular:component": {
+        "@schematics/angular:component": {
           "styleext": "scss",
           "skipTests": true
         },
