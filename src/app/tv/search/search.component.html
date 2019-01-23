@@ -6,12 +6,12 @@
   <section class="col">
     <h1 class="h5">Search shows</h1>
 
-    <div class="input-group mb-3">
-      <input type="search" [(ngModel)]="query" class="form-control">
+    <form class="input-group mb-3">
+      <input name="query" type="search" [(ngModel)]="query" class="form-control">
       <div class="input-group-append">
         <button (click)="search(query)" class="btn btn-outline-primary">Find</button>
       </div>
-    </div>
+    </form>
 
     <div class="row">
       <div class="col col-4" *ngFor="let show of shows">
