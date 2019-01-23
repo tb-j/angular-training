@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { Show } from '../tv.models';
+import { get } from 'lodash';
 
 @Component({
   selector: 'tm-poster',
@@ -13,9 +14,10 @@ export class PosterComponent implements OnInit {
   private readonly placeholderUrl = 'https://fillmurray.com/210/295';
 
   ngOnInit() {
-    this.imageUrl = this.show.image
-      ? this.show.image.medium
-      : this.placeholderUrl;
+    this.imageUrl = get(this.show, 'image.medium', this.placeholderUrl);
+      // this.show.image
+      // ? this.show.image.medium
+      // : this.placeholderUrl;
   }
 
 }
