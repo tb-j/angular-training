@@ -4,7 +4,7 @@ import { Bookmark, BookmarkId } from './bookmarks.models';
 @Injectable({
   providedIn: 'root'
 })
-export class BookmarksService<T extends Bookmark> {
+export class BookmarksService<T extends Bookmark = Bookmark> {
   private items: T[] = [];
 
   getAll(): T[] {

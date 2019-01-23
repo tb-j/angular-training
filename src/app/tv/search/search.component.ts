@@ -22,14 +22,6 @@ export class SearchComponent {
       .subscribe(shows => this.shows = shows);
   }
 
-  saveBookmark(show: Show) {
-    this.bs.add(show);
-  }
-
-  isBookmarked({ id }: Show): boolean {
-    return this.bs.has(id);
-  }
-
   get bookmarks(): Show[] {
     return this.bs.getAll();
   }
