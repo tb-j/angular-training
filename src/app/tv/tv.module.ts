@@ -5,13 +5,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { PosterComponent } from './poster/poster.component';
 import { FormsModule } from '@angular/forms';
 import { BookmarksModule } from '../bookmarks/bookmarks.module';
+import { ShowDetailsComponent } from './show-details/show-details.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [SearchComponent, PosterComponent],
+  declarations: [SearchComponent, PosterComponent, ShowDetailsComponent],
   imports: [
     CommonModule,
     HttpClientModule,
     FormsModule,
+    RouterModule,
     BookmarksModule,
   ]
 })

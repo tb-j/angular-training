@@ -13,16 +13,16 @@ export class TvMazeService {
   constructor(private http: HttpClient) {
   }
 
+  getShow(id: number | string): Observable<Show> {
+    const url = `${this.rootUrl}/shows/${id}?embed=episodes`;
+    return this.http.get<Show>(url);
+  }
+
   searchShows(query: string): Observable<Show[]> {
     const url = `${this.rootUrl}/search/shows?q=${query}`;
     return this.http.get<ShowResponse[]>(url)
       .pipe(
-        // tap(console.log),
         map(showsResponses => showsResponses.map(({show}) => show)),
-        // catchError((err) => {
-        //   console.error('Error', err);
-        //   return of([]);
-        // }),
       );
   }
 }
