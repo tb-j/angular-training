@@ -4,14 +4,14 @@ import { Bookmark, BookmarkId } from './bookmarks.models';
 @Injectable({
   providedIn: 'root'
 })
-export class BookmarksService {
-  private items: Bookmark[] = [];
+export class BookmarksService<T extends Bookmark> {
+  private items: T[] = [];
 
-  getAll(): Bookmark[] {
+  getAll(): T[] {
     return [...this.items];
   }
 
-  add(item: Bookmark): void {
+  add(item: T): void {
     this.items.push(item);
   }
 

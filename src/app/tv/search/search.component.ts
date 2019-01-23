@@ -13,7 +13,7 @@ export class SearchComponent {
   query = 'flash';
 
   constructor(private tv: TvMazeService,
-              private bs: BookmarksService) {
+              private bs: BookmarksService<Show>) {
     this.search(this.query);
   }
 
@@ -31,6 +31,6 @@ export class SearchComponent {
   }
 
   get bookmarks(): Show[] {
-    return this.bs.getAll() as Show[];
+    return this.bs.getAll();
   }
 }
