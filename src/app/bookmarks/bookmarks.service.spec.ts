@@ -1,5 +1,6 @@
 import { Bookmark } from './bookmarks.models';
 import { BookmarksService } from './bookmarks.service';
+import { TestBed } from '@angular/core/testing';
 
 describe('dummy', () => {
   it('runs a simple calculation', () => {
@@ -16,7 +17,11 @@ describe('BookmarksService', () => {
   let bookmarkService: BookmarksService;
 
   beforeEach(() => {
-    bookmarkService = new BookmarksService();
+    TestBed.configureTestingModule({
+      providers: [BookmarksService]
+    });
+
+    bookmarkService = TestBed.get(BookmarksService);
   });
 
   describe('add()', () => {
