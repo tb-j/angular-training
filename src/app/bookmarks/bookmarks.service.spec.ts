@@ -1,0 +1,42 @@
+import { Bookmark } from './bookmarks.models';
+import { BookmarksService } from './bookmarks.service';
+
+describe('dummy', () => {
+  it('runs a simple calculation', () => {
+    expect(1 + 4).toBe(5);
+  });
+
+  it('checks an array value', () => {
+    const data = [1, 2, 4];
+    expect(data).toEqual([1, 2, 4]);
+  });
+});
+
+describe('BookmarksService', () => {
+  let bookmarkService: BookmarksService;
+
+  beforeEach(() => {
+    bookmarkService = new BookmarksService();
+  });
+
+  describe('add()', () => {
+    let bookmark1: Bookmark;
+    beforeEach(() => {
+      bookmark1 = {id: 1};
+    });
+
+    it('adds given object to the items array', () => {
+      bookmarkService.add(bookmark1);      // Act
+      expect(bookmarkService.getAll()).toContain({id: 1}); // Assert
+    });
+
+    it('adds new objects to the end of the items array', () => {
+      const bookmark2: Bookmark = {id: 2};
+      bookmarkService.add(bookmark1);
+      bookmarkService.add(bookmark2);
+
+      expect(bookmarkService.getAll()[1]).toEqual({id: 2});
+      expect(bookmarkService.getAll()[0]).not.toEqual({id: 2});
+    });
+  });
+});
