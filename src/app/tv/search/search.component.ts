@@ -11,8 +11,7 @@ export class SearchComponent implements OnInit {
   shows: Show[] = [];
 
   constructor(private tv: TvMazeService) {
-    this.tv.searchShows('flash')
-      .subscribe(shows => this.shows = shows);
+    this.search('flash');
   }
 
   ngOnInit() {
