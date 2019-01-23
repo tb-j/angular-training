@@ -7,9 +7,9 @@
     <h1 class="h5">Search shows</h1>
 
     <div class="input-group mb-3">
-      <input #queryRef type="search" class="form-control">
+      <input type="search" [(ngModel)]="query" class="form-control">
       <div class="input-group-append">
-        <button (click)="search(queryRef.value)" class="btn btn-outline-primary">Find</button>
+        <button (click)="search(query)" class="btn btn-outline-primary">Find</button>
       </div>
     </div>
 

@@ -9,9 +9,10 @@ import { Show } from '../tv.models';
 })
 export class SearchComponent implements OnInit {
   shows: Show[] = [];
+  query = 'flash';
 
   constructor(private tv: TvMazeService) {
-    this.search('flash');
+    this.search(this.query);
   }
 
   ngOnInit() {
