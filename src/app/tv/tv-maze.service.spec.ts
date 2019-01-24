@@ -39,4 +39,8 @@ describe('SearchService', () => {
       expect(showsReturned).toEqual(expectedResult);
     });
   });
+
+  afterEach(() => {
+    httpMock.verify();
+  });
 });
