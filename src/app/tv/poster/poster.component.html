@@ -1,8 +1,10 @@
-<img class="img-fluid mb-2" [src]="imageUrl" alt="">
-<ng-content></ng-content>
+<ng-container *ngIf="show">
+  <img class="img-fluid mb-2" [src]="imageUrl" alt="">
+  <ng-content></ng-content>
 
-<h2 class="h5 mt-1">
-  <a routerLink="/tv/{{show.id}}">
-    {{show.name}}
-  </a>
-</h2>
+  <h2 class="h5 mt-1">
+    <a routerLink="/tv/{{show.id}}">
+      {{show.name}}
+    </a>
+  </h2>
+</ng-container>

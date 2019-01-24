@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ShowDetailsParams } from '../../app-routing.module';
-import { Show } from '../tv.models';
+import { ShowDetails } from '../tv.models';
 import { TvMazeService } from '../tv-maze.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { TvMazeService } from '../tv-maze.service';
   styleUrls: ['./show-details.component.scss']
 })
 export class ShowDetailsComponent {
-  show: Show;
+  show: ShowDetails;
 
   constructor(route: ActivatedRoute,
               tv: TvMazeService) {
@@ -18,7 +18,6 @@ export class ShowDetailsComponent {
 
     tv.getShow(showId)
       .subscribe(show => this.show = show);
-    // https://api.tvmaze.com/shows/13243?embed=episodes
   }
 
 }

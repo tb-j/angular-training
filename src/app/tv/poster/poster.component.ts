@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnChanges, ViewEncapsulation } from '@angular/core';
 import { Show } from '../tv.models';
 import { get } from 'lodash';
 
@@ -6,14 +6,15 @@ import { get } from 'lodash';
   selector: 'tm-poster',
   templateUrl: './poster.component.html',
   styleUrls: ['./poster.component.scss'],
-  encapsulation: ViewEncapsulation.Emulated
+  encapsulation: ViewEncapsulation.Emulated,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class PosterComponent implements OnInit {
+export class PosterComponent implements OnChanges {
   @Input() show: Show;
   imageUrl: string;
   private readonly placeholderUrl = 'https://fillmurray.com/210/295';
 
-  ngOnInit() {
+  ngOnChanges() {
     this.imageUrl = get(this.show, 'image.medium', this.placeholderUrl);
       // this.show.image
       // ? this.show.image.medium

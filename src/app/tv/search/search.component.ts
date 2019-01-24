@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { TvMazeService } from '../tv-maze.service';
 import { Show } from '../tv.models';
 import { BookmarksService } from '../../bookmarks/bookmarks.service';

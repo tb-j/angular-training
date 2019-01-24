@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Show, ShowResponse } from './tv.models';
+import { Show, ShowDetails, ShowResponse } from './tv.models';
 import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 
@@ -13,9 +13,9 @@ export class TvMazeService {
   constructor(private http: HttpClient) {
   }
 
-  getShow(id: number | string): Observable<Show> {
+  getShow(id: number | string): Observable<ShowDetails> {
     const url = `${this.rootUrl}/shows/${id}?embed=episodes`;
-    return this.http.get<Show>(url);
+    return this.http.get<ShowDetails>(url);
   }
 
   searchShows(query: string): Observable<Show[]> {

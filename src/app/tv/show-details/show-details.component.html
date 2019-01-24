@@ -1,1 +1,30 @@
-<h1>{{show.name}}</h1>
+<div class="row">
+  <tm-poster class="col col-3" [show]="show"></tm-poster>
+
+  <section class="col">
+    <h1>{{show?.name}}</h1>
+    <div [innerHTML]="show?.summary"></div>
+
+    <!--<pre>{{ show | json }}</pre>-->
+
+
+    <!-- table>(thead>tr>th*3)+(tbody>tr>td*3) -->
+    <table class="table">
+      <thead>
+      <tr>
+        <th>number</th>
+        <th>title</th>
+        <th>air date</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let episode of show?._embedded.episodes">
+        <td>{{ episode.number }} / {{episode.season}}</td>
+        <td>{{ episode.name }}</td>
+        <td>{{ episode.airdate | date:'dd.MM.yyyy' }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+</div>
+
