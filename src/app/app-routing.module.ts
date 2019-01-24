@@ -6,6 +6,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ShowDetailsComponent } from './tv/show-details/show-details.component';
 import { ShowDetailsResolver } from './tv/show-details/show-details.resolver';
+import { LoggedInGuard } from './auth/logged-in.guard';
+import { HasRolesGuard } from './auth/has-roles.guard';
 
 export interface ShowDetailsParams {
   showId: string;
@@ -19,7 +21,14 @@ const routes: Routes = [
     component: ShowDetailsComponent,
     resolve: {
       show: ShowDetailsResolver
-    }
+    },
+    data: {
+      roles: ['admin', 'editor']
+    },
+    canActivate: [
+      LoggedInGuard,
+      HasRolesGuard,
+    ]
   },
   {path: 'contact', component: ContactComponent},
   {path: '**', component: NotFoundComponent},
