@@ -10,7 +10,12 @@ import { RouterModule } from '@angular/router';
 import { EpisodisePipe } from './episodise.pipe';
 
 @NgModule({
-  declarations: [SearchComponent, PosterComponent, ShowDetailsComponent, EpisodisePipe],
+  declarations: [
+    SearchComponent,
+    PosterComponent,
+    ShowDetailsComponent,
+    EpisodisePipe,
+  ],
   imports: [
     CommonModule,
     HttpClientModule,
