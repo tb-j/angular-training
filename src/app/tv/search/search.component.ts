@@ -11,10 +11,13 @@ import { BookmarksService } from '../../bookmarks/bookmarks.service';
 export class SearchComponent {
   shows: Show[] = [];
   query = 'flash';
+  bookmarks: Show[] = [];
 
   constructor(private tv: TvMazeService,
               private bs: BookmarksService<Show>) {
     this.search(this.query);
+    this.bs.items$
+      .subscribe(items => this.bookmarks = items);
   }
 
   search(query: string) {
@@ -22,7 +25,7 @@ export class SearchComponent {
       .subscribe(shows => this.shows = shows);
   }
 
-  get bookmarks(): Show[] {
-    return this.bs.getAll();
-  }
+  // get bookmarks(): Show[] {
+  //   return this.bs.getAll();
+  // }
 }
