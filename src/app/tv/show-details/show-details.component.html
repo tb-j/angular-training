@@ -19,7 +19,7 @@
       </thead>
       <tbody>
       <tr *ngFor="let episode of show?._embedded.episodes">
-        <td>{{ episode.number }} / {{episode.season}}</td>
+        <td>{{ episode | episodise }}</td>
         <td>{{ episode.name }}</td>
         <td>{{ episode.airdate | date:'dd.MM.yyyy' }}</td>
       </tr>
