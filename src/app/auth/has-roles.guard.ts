@@ -6,7 +6,7 @@ import { ActivatedRouteSnapshot, CanActivate } from '@angular/router';
 })
 export class HasRolesGuard implements CanActivate {
   canActivate(route: ActivatedRouteSnapshot): boolean {
-    const currentUserRole = 'user';
+    const currentUserRole = 'admin';
     const { roles } = route.data;
     return roles.includes(currentUserRole);
   }
