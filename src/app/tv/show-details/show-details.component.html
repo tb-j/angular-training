@@ -2,8 +2,8 @@
   <tm-poster class="col col-3" [show]="show"></tm-poster>
 
   <section class="col">
-    <h1>{{show?.name}}</h1>
-    <div [innerHTML]="show?.summary"></div>
+    <h1>{{show.name}}</h1>
+    <div [innerHTML]="show.summary"></div>
 
     <!--<pre>{{ show | json }}</pre>-->
 
@@ -18,7 +18,7 @@
       </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let episode of show?._embedded.episodes">
+      <tr *ngFor="let episode of show._embedded.episodes">
         <td>{{ episode | episodise }}</td>
         <td>{{ episode.name }}</td>
         <td>{{ episode.airdate | date:'dd.MM.yyyy' }}</td>
