@@ -14,10 +14,10 @@
   <section class="col">
     <h1 class="h5">Search shows</h1>
 
-    <form class="input-group mb-3">
-      <input name="query" type="search" [(ngModel)]="query" class="form-control">
+    <form [formGroup]="form" class="input-group mb-3">
+      <input formControlName="query" type="search" class="form-control">
       <div class="input-group-append">
-        <button (click)="search(query)" class="btn btn-outline-primary">Find</button>
+        <button (click)="search(form.get('query').value)" class="btn btn-outline-primary">Find</button>
       </div>
     </form>
 
