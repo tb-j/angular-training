@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './tv/search/search.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -31,13 +31,15 @@ const routes: Routes = [
     ]
   },
   {path: 'contact', component: ContactComponent},
+  {path: 'admin', loadChildren: './admin/admin.module#AdminModule'},
   {path: '**', component: NotFoundComponent},
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
     useHash: false,
-    enableTracing: false
+    enableTracing: false,
+    preloadingStrategy: PreloadAllModules
   })],
   // providers: [ShowDetailsResolver],
   exports: [RouterModule]
