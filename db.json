@@ -1,64 +1,6 @@
 {
   "bookmarks": [
     {
-      "id": 13,
-      "url": "http://www.tvmaze.com/shows/13/the-flash",
-      "name": "The Flash",
-      "type": "Scripted",
-      "language": "English",
-      "genres": [
-        "Drama",
-        "Action",
-        "Science-Fiction"
-      ],
-      "status": "Running",
-      "runtime": 60,
-      "premiered": "2014-10-07",
-      "officialSite": "http://www.cwtv.com/shows/the-flash/",
-      "schedule": {
-        "time": "20:00",
-        "days": [
-          "Tuesday"
-        ]
-      },
-      "rating": {
-        "average": 8.1
-      },
-      "weight": 100,
-      "network": {
-        "id": 5,
-        "name": "The CW",
-        "country": {
-          "name": "United States",
-          "code": "US",
-          "timezone": "America/New_York"
-        }
-      },
-      "webChannel": null,
-      "externals": {
-        "tvrage": 36939,
-        "thetvdb": 279121,
-        "imdb": "tt3107288"
-      },
-      "image": {
-        "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/167/418419.jpg",
-        "original": "http://static.tvmaze.com/uploads/images/original_untouched/167/418419.jpg"
-      },
-      "summary": "<p>After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move through Central City like an unseen guardian angel. Though initially excited by his newfound powers, Barry is shocked to discover he is not the only \"meta-human\" who was created in the wake of the accelerator explosion -- and not everyone is using their new powers for good. Barry partners with S.T.A.R. Labs and dedicates his life to protect the innocent. For now, only a few close friends and associates know that Barry is literally the fastest man alive, but it won't be long before the world learns what Barry Allen has become...The Flash!</p>",
-      "updated": 1548234368,
-      "_links": {
-        "self": {
-          "href": "http://api.tvmaze.com/shows/13"
-        },
-        "previousepisode": {
-          "href": "http://api.tvmaze.com/episodes/1588294"
-        },
-        "nextepisode": {
-          "href": "http://api.tvmaze.com/episodes/1589564"
-        }
-      }
-    },
-    {
       "id": 7079,
       "url": "http://www.tvmaze.com/shows/7079/the-flash",
       "name": "The Flash",
@@ -114,31 +56,136 @@
       }
     },
     {
-      "id": 528,
-      "url": "http://www.tvmaze.com/shows/528/the-flash",
-      "name": "The Flash",
+      "id": 32809,
+      "url": "http://www.tvmaze.com/shows/32809/shinseiki-duel-masters-flash",
+      "name": "Shinseiki Duel Masters Flash",
+      "type": "Animation",
+      "language": "Japanese",
+      "genres": [
+        "Comedy",
+        "Anime"
+      ],
+      "status": "Ended",
+      "runtime": 15,
+      "premiered": "2006-04-10",
+      "officialSite": "http://www.shopro.co.jp/tv/archive/duelmasters_flash/",
+      "schedule": {
+        "time": "06:45",
+        "days": [
+          "Monday"
+        ]
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 0,
+      "network": {
+        "id": 76,
+        "name": "TV Tokyo",
+        "country": {
+          "name": "Japan",
+          "code": "JP",
+          "timezone": "Asia/Tokyo"
+        }
+      },
+      "webChannel": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": null,
+        "imdb": null
+      },
+      "image": {
+        "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/131/329884.jpg",
+        "original": "http://static.tvmaze.com/uploads/images/original_untouched/131/329884.jpg"
+      },
+      "summary": null,
+      "updated": 1508515162,
+      "_links": {
+        "self": {
+          "href": "http://api.tvmaze.com/shows/32809"
+        },
+        "previousepisode": {
+          "href": "http://api.tvmaze.com/episodes/1336190"
+        }
+      }
+    },
+    {
+      "id": 18512,
+      "url": "http://www.tvmaze.com/shows/18512/the-flash-chronicles-of-cisco",
+      "name": "The Flash: Chronicles of Cisco",
       "type": "Scripted",
       "language": "English",
       "genres": [
+        "Drama",
         "Action",
-        "Adventure",
+        "Adventure"
+      ],
+      "status": "Ended",
+      "runtime": 2,
+      "premiered": "2016-04-19",
+      "officialSite": "http://thecwflash.tumblr.com/",
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 54,
+      "network": null,
+      "webChannel": {
+        "id": 13,
+        "name": "CW Seed",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        }
+      },
+      "externals": {
+        "tvrage": null,
+        "thetvdb": null,
+        "imdb": "tt5654736"
+      },
+      "image": {
+        "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/63/157992.jpg",
+        "original": "http://static.tvmaze.com/uploads/images/original_untouched/63/157992.jpg"
+      },
+      "summary": "<p><b>The Flash: Chronicles of Cisco</b> follows \"The Flash\" character Cisco Ramon as he works late at S.T.A.R. Labs making improvements to the Flash's suit.</p>",
+      "updated": 1521032258,
+      "_links": {
+        "self": {
+          "href": "http://api.tvmaze.com/shows/18512"
+        },
+        "previousepisode": {
+          "href": "http://api.tvmaze.com/episodes/841920"
+        }
+      }
+    },
+    {
+      "id": 999,
+      "url": "http://www.tvmaze.com/shows/999/flash-gordon",
+      "name": "Flash Gordon",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
         "Science-Fiction"
       ],
       "status": "Ended",
       "runtime": 60,
-      "premiered": "1990-09-20",
+      "premiered": "2007-08-10",
       "officialSite": null,
       "schedule": {
-        "time": "20:30",
+        "time": "21:00",
         "days": []
       },
       "rating": {
-        "average": 8.5
+        "average": 6.1
       },
-      "weight": 90,
+      "weight": 66,
       "network": {
-        "id": 2,
-        "name": "CBS",
+        "id": 16,
+        "name": "Syfy",
         "country": {
           "name": "United States",
           "code": "US",
@@ -147,22 +194,70 @@
       },
       "webChannel": null,
       "externals": {
-        "tvrage": 5781,
-        "thetvdb": 78650,
-        "imdb": "tt0098798"
+        "tvrage": 15536,
+        "thetvdb": 80441,
+        "imdb": "tt0959086"
       },
       "image": {
-        "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/4/11360.jpg",
-        "original": "http://static.tvmaze.com/uploads/images/original_untouched/4/11360.jpg"
+        "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/6/16548.jpg",
+        "original": "http://static.tvmaze.com/uploads/images/original_untouched/6/16548.jpg"
       },
-      "summary": "<p>The Flash is Barry Allen, a police scientist, who was working one night during a terrible thunder storm when a bolt of lightning crashes through the lab window, electrocuting him. Barry survives and soon learns that he is now able to move at almost incomprehensible speed.</p>",
-      "updated": 1544957398,
+      "summary": "<p>Placing a 21st century spin on a science fiction classic, SCI FI's contemporized version of <b>Flash Gordon</b> follows the all-new adventures of Flash and his companions, Dale Arden and Dr. Hans Zarkov. Ordinary people thrust into extraordinary circumstances, they find themselves as Earth's last line of defense against the forces of the merciless dictator Ming.</p>",
+      "updated": 1512969260,
       "_links": {
         "self": {
-          "href": "http://api.tvmaze.com/shows/528"
+          "href": "http://api.tvmaze.com/shows/999"
         },
         "previousepisode": {
-          "href": "http://api.tvmaze.com/episodes/47947"
+          "href": "http://api.tvmaze.com/episodes/98788"
+        }
+      }
+    },
+    {
+      "id": 36607,
+      "url": "http://www.tvmaze.com/shows/36607/the-flash-stretched-scene",
+      "name": "The Flash: Stretched Scene",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [],
+      "status": "Ended",
+      "runtime": 2,
+      "premiered": "2017-11-14",
+      "officialSite": null,
+      "schedule": {
+        "time": "",
+        "days": [
+          "Tuesday"
+        ]
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 0,
+      "network": {
+        "id": 5,
+        "name": "The CW",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        }
+      },
+      "webChannel": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": null,
+        "imdb": null
+      },
+      "image": null,
+      "summary": "<p><b>The Flash: Stretched Scene</b> is a mini-series, focusing on Ralph Dibny, that aired during commercial breaks of Season 4 of The Flash, as well as online.</p>",
+      "updated": 1525525284,
+      "_links": {
+        "self": {
+          "href": "http://api.tvmaze.com/shows/36607"
+        },
+        "previousepisode": {
+          "href": "http://api.tvmaze.com/episodes/1463520"
         }
       }
     }

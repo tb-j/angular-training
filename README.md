@@ -13,3 +13,4 @@
 
 
 ## Learn more:
+- https://github.com/juristr/angular-testing-recipes
