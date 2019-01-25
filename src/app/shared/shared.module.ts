@@ -1,12 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoadingComponent } from './loading/loading.component';
+import { StartsWithLetterDirective } from './forms/starts-with-letter.directive';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [LoadingComponent],
+  declarations: [LoadingComponent, StartsWithLetterDirective],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
   ],
-  exports: [LoadingComponent]
+  exports: [
+    LoadingComponent,
+    StartsWithLetterDirective,
+    CommonModule,
+    FormsModule,
+  ]
 })
 export class SharedModule { }
