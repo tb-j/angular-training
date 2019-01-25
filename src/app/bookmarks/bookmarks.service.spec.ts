@@ -30,12 +30,12 @@ describe('BookmarksService', () => {
       bookmark1 = {id: 1};
     });
 
-    it('adds given object to the items array', () => {
+    it('adds given object to the item array', () => {
       bookmarkService.add(bookmark1);      // Act
       expect(bookmarkService.getAll()).toContain({id: 1}); // Assert
     });
 
-    it('adds new objects to the end of the items array', () => {
+    it('adds new objects to the end of the item array', () => {
       const bookmark2: Bookmark = {id: 2};
       bookmarkService.add(bookmark1);
       bookmarkService.add(bookmark2);
