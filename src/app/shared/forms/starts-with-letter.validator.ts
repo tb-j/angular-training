@@ -1,7 +1,9 @@
 import { AbstractControl, ValidationErrors } from '@angular/forms';
 
-export function startsWithLetter(control: AbstractControl): ValidationErrors | null {
-  const rule = /^[a-zA-Z]/;
+const startsWithLetter = (uppercaseOnly = false) => (control: AbstractControl): ValidationErrors | null => {
+  const rule = uppercaseOnly
+    ? /^[A-Z]/
+    : /^[a-zA-Z]/;
 
   return (!control.value || rule.test(control.value))
     ? null
@@ -9,4 +11,6 @@ export function startsWithLetter(control: AbstractControl): ValidationErrors | n
     startsWithLetter: true
     // startsWithLetter: {char: control.value[0]}
   };
-}
+};
+
+export { startsWithLetter };

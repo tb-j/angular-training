@@ -31,7 +31,7 @@ export class SearchComponent {
         [
           Validators.minLength(3),
           Validators.required,
-          startsWithLetter,
+          startsWithLetter(true),
         ]
       ],
     });
